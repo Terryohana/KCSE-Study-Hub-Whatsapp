@@ -102,18 +102,38 @@ def main():
 
     date_str = eat_now.strftime("%A, %d %B %Y")
 
+    # Difficulty stars based on slot number
+    if slot_number <= 3:
+        difficulty = "⭐⭐☆☆☆ (Foundational Drill)"
+        est_time = "10 Mins"
+    elif slot_number <= 7:
+        difficulty = "⭐⭐⭐☆☆ (Standard KNEC Level)"
+        est_time = "15 Mins"
+    elif slot_number <= 10:
+        difficulty = "⭐⭐⭐⭐☆ (High-Yield Challenge)"
+        est_time = "20 Mins"
+    else:
+        difficulty = "⭐⭐⭐⭐⭐ (Distinction A-Tier)"
+        est_time = "25 Mins"
+
     message = (
-        f"🌅 *KCSE STUDY HUB: DAILY REVISION DRILL* 📚\n"
-        f"📅 {date_str} | ⏰ {slot_label}\n"
-        f"🏷️ {selected['day_theme']}\n"
-        f"📖 *Paper:* {selected['paper']}\n\n"
-        f"📌 *Topic:* {selected['topic']}\n\n"
+        f"╔══════════════════════════╗\n"
+        f"  🎓 *KCSE STUDY HUB REVISION* 🇰🇪\n"
+        f"╚══════════════════════════╝\n"
+        f"📅 *{date_str}* | ⏰ *{slot_label}*\n"
+        f"🏷️ *Theme:* {selected['day_theme']}\n"
+        f"📖 *Paper:* {selected['paper']}\n"
+        f"⚡ *Difficulty:* {difficulty}\n"
+        f"⏱️ *Target Time:* {est_time}\n\n"
+        f"📍 *TOPIC:* {selected['topic']}\n\n"
+        f"━━━━━━━━━━━━━━━━━━━━\n"
         f"❓ *QUESTION (Slot {slot_number}/11):*\n"
         f"{selected['question']}\n\n"
         f"💡 *EXAMINER TIP / KEY METHOD:*\n"
-        f"{selected['tip']}\n\n"
-        f"━━━━━━━━━━━━━━━━━━━━\n"
-        f"📲 *Open KCSE Study Hub for Past Papers & Answers:*\n"
+        f"{selected['tip']}\n"
+        f"━━━━━━━━━━━━━━━━━━━━\n\n"
+        f"💬 *Challenge:* Attempt this question and share your answer below! ✍️\n\n"
+        f"📲 *Check Complete Marking Scheme on KCSE Study Hub:*\n"
         f"https://play.google.com/store/apps/details?id=com.revisekenya.kcsehub"
     )
 
