@@ -1,0 +1,44 @@
+name: Scheduled KCSE WhatsApp Revision Bot
+
+on:
+  schedule:
+    # Triggers every 30 minutes from 04:00 UTC to 09:00 UTC
+    # Matches 07:00 AM to 12:00 PM East Africa Time (EAT)
+    - cron: '0,30 4-9 * * *'
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: 'Optional: Force specific slot number (1 to 11). Leave blank for auto time slot.'
+        required: false
+        default: ''
+
+jobs:
+  post-revision-drill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Dispatch KCSE Revision Question
+        env:
+          WHATSAPP_API_URL: ${{ secrets.WHATSAPP_API_URL || 'https://7107.api.greenapi.com' }}
+          WHATSAPP_INSTANCE_ID: ${{ secrets.WHATSAPP_INSTANCE_ID || '710722732605' }}
+          WHATSAPP_API_TOKEN: ${{ secrets.WHATSAPP_API_TOKEN || '14f3ba786ec84b14b4c631a3ffd2c8e1fb32f9782bda45198e' }}
+          WHATSAPP_GROUP_ID: ${{ secrets.WHATSAPP_GROUP_ID || '120363414303629222@g.us' }}
+        run: |
+          SLOT_ARG="${{ github.event.inputs.slot }}"
+          if [ -n "$SLOT_ARG" ]; then
+            python scripts/post_daily_whatsapp.py --slot "$SLOT_ARG"
+          else
+            python scripts/post_daily_whatsapp.py
+          fi

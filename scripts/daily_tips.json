@@ -1,0 +1,107 @@
+[
+  {
+    "subject": "📐 MATHEMATICS",
+    "topic": "Calculus & Turning Points",
+    "question": "A curve has equation y = 2x³ - 3x² - 12x + 7. Find the coordinates of the maximum and minimum points.",
+    "tip": "Set dy/dx = 0 to solve for x. Use the second derivative d²y/dx²: if d²y/dx² < 0 it's a maximum, if > 0 it's a minimum.",
+    "paper": "Math Paper 1"
+  },
+  {
+    "subject": "🧬 BIOLOGY",
+    "topic": "Physiology of Digestion",
+    "question": "Why is pepsin secreted in the inactive form pepsinogen in the human stomach?",
+    "tip": "It prevents the enzyme from digesting the stomach's own cellular walls (autolysis). It is activated only in the lumen by hydrochloric acid (HCl).",
+    "paper": "Biology Paper 1"
+  },
+  {
+    "subject": "🧪 CHEMISTRY",
+    "topic": "Periodic Table & Trends",
+    "question": "Explain why the first ionization energy of sodium is lower than that of magnesium, yet both are in Period 3.",
+    "tip": "Magnesium has a higher nuclear charge (12 protons vs 11 protons) with the same screening effect, pulling valence electrons tighter.",
+    "paper": "Chemistry Paper 1"
+  },
+  {
+    "subject": "⚡ PHYSICS",
+    "topic": "Current Electricity",
+    "question": "A cell supplies a current of 0.6 A through a 4 Ω resistor and 0.4 A through a 7 Ω resistor. Calculate the electromotive force (E) and internal resistance (r) of the cell.",
+    "tip": "Set up two simultaneous equations using E = I(R + r): E = 0.6(4 + r) and E = 0.4(7 + r). Solve for r then substitute to find E.",
+    "paper": "Physics Paper 2"
+  },
+  {
+    "subject": "📖 ENGLISH",
+    "topic": "Paper 2 - Literary Appreciation",
+    "question": "When analyzing character traits in set texts, what formula guarantees maximum marks?",
+    "tip": "Identify trait -> Provide illustrative textual evidence -> State the impact on the plot or other characters. Avoid merely retelling the story.",
+    "paper": "English Paper 2"
+  },
+  {
+    "subject": "🇰🇪 KISWAHILI",
+    "topic": "Fasihi Simulizi",
+    "question": "Taja na ueleze sifa tatu za mighani (mashujaa) katika fasihi simulizi.",
+    "tip": "Hutumia chuku (hyperbole) kusifu ushujaa, huhusisha matukio ya kihistoria ya jamii, na hutolewa kwa lugha ya kishairi au wimbo.",
+    "paper": "Kiswahili Karatasi ya 3"
+  },
+  {
+    "subject": "🌍 GEOGRAPHY",
+    "topic": "Internal Land-forming Processes",
+    "question": "State three conditions necessary for the formation of a caldera by subsidence.",
+    "tip": "Explosive eruption ejects magma chamber content, leaving an empty subterranean void; overburden rock collapses inward under gravity.",
+    "paper": "Geography Paper 1"
+  },
+  {
+    "subject": "✝️ C.R.E",
+    "topic": "Old Testament Prophecies",
+    "question": "Explain Isaiah's prophecy concerning the Suffering Servant (Isaiah 53).",
+    "tip": "The servant would be despised, pierced for our transgressions, led like a lamb to the slaughter, and exalted through his sacrifice.",
+    "paper": "CRE Paper 1"
+  },
+  {
+    "subject": "🏛️ HISTORY & GOVERNMENT",
+    "topic": "Devolution in Kenya",
+    "question": "State five functions of County Governments according to the Fourth Schedule of the 2010 Constitution.",
+    "tip": "County health services, agriculture & fisheries, county transport, control of air/noise pollution, and pre-primary (ECDE) education.",
+    "paper": "History Paper 2"
+  },
+  {
+    "subject": "💼 BUSINESS STUDIES",
+    "topic": "Demand and Supply",
+    "question": "State four factors that lead to an abnormal (backward-bending) supply curve.",
+    "tip": "Labor market supply at high wage rates, fear of price drops in perishable goods, government price ceilings, and speculation.",
+    "paper": "Business Studies Paper 1"
+  },
+  {
+    "subject": "🌱 AGRICULTURE",
+    "topic": "Soil Fertility & Fertilizers",
+    "question": "Differentiate between straight fertilizers and compound fertilizers, giving an example of each.",
+    "tip": "Straight fertilizers contain only ONE primary nutrient (e.g. CAN for Nitrogen); compound fertilizers contain TWO OR MORE primary nutrients (e.g. DAP 18:46:0).",
+    "paper": "Agriculture Paper 1"
+  },
+  {
+    "subject": "📐 MATHEMATICS",
+    "topic": "Trigonometry II",
+    "question": "Solve the equation 2 cos²x + sin x - 1 = 0 for 0° ≤ x ≤ 360°.",
+    "tip": "Use the identity cos²x = 1 - sin²x to form a quadratic equation in terms of sin x: 2(1 - sin²x) + sin x - 1 = 0. Factorize to solve.",
+    "paper": "Math Paper 2"
+  },
+  {
+    "subject": "🧬 BIOLOGY",
+    "topic": "Genetics & Inheritance",
+    "question": "A hemophilic man marries a carrier female. Determine the phenotypic ratio of their offspring.",
+    "tip": "Hemophilia is sex-linked recessive (Xʰ). Cross XʰY with XᴴXʰ. Result: 25% normal female (carrier), 25% hemophilic female, 25% normal male, 25% hemophilic male.",
+    "paper": "Biology Paper 2"
+  },
+  {
+    "subject": "⚡ PHYSICS",
+    "topic": "Waves & Optics",
+    "question": "State two conditions required for Total Internal Reflection (TIR) to occur.",
+    "tip": "1. Light must travel from an optically denser medium to an optically rarer medium. 2. The angle of incidence must exceed the critical angle.",
+    "paper": "Physics Paper 1"
+  },
+  {
+    "subject": "🧪 CHEMISTRY",
+    "topic": "Electrochemistry",
+    "question": "State Faraday's First Law of Electrolysis and give the mathematical formula.",
+    "tip": "The mass (m) of a substance liberated at an electrode is directly proportional to the quantity of electricity (Q) passed: m = ZIt (where Q = It).",
+    "paper": "Chemistry Paper 2"
+  }
+]
